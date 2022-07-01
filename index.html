@@ -1,0 +1,62 @@
+<html>
+    <head>
+       <title>분리수거, 잘 하고 계시나요?</title> 
+       <meta charset="utf-8">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+       <link rel="stylesheet" href="text1.css">
+       <link rel="stylesheet" href="main.css">
+       <link rel = "stylesheet" href = "animation.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "contents">
+            <section id="main" class="mx-auto my-5 py-5 px-3">
+                <h1>분리수거, 잘 하시고 계시나요?</h1><br>
+                <div style ="margin-top: 20px; margin-bottom: 15px;">
+                 <img id = "image1" src = "bird.jpg" width = '500px' onclick ="text()"></img>
+                </div>
+                <h5 style = "color:darkgray" id = "click"> 사진을 클릭해주세요 </h5>
+                <section style = "margin-top: 15px; margin-bottom: 20px;" id = text1>
+                    <div class = "contents">
+                    <h5 >이 사진은 배가 쓰레기로 가득 찬 채 죽은 알바트로스 새끼의 모습입니다.   </h5>
+                    <h5>2018년 세계 은행 보고서에 따르면, 지금 전세계 사람들은 몸무게의 3배가 넘는 쓰레기를 만들어 내고 있습니다. </h5>
+                    <h5>쓰레기로 인한 환경오염을 줄이고, 쓰레기가 될 물건의 생산을 줄이는 가장 쉬운 방법인 분리수거! </h5>
+                    <h5>그러나 잘못된 분리수거는 오히려 재활용을 어렵게 한다는 점, 알고 계셨나요?</h5>
+                  
+                   
+                    </div>
+                </section>
+                <section id = button >
+                    <h5>더 멋진 환경 지킴이가 되기 위해, 지금부터 분리수거 상식을 간단히 테스트해봐요!</h5>
+                  <button type="button" class="btn btn-outline-dark" onclick = "location.href = 'test.html'" style="margin-top: 10px">시작하기</button>
+                </section>
+            </section>
+       
+        
+        </div>
+        <script>
+            function text(){
+                
+                setTimeout(() => {
+                 text1.style.WebkitAnimation = "fadeIn 0.5s";
+                 text1.style.animation = "fadeIn 0.5s";
+                setTimeout(() => {
+                    click.style.display = "none";
+                  text1.style.display = "block"
+                    }, 50)
+                }, 50);
+                setTimeout(() => {
+                 button.style.WebkitAnimation = "fadeIn 1s";
+                 button.style.animation = "fadeIn 1s";
+                setTimeout(() => {
+                  button.style.display = "block"
+                    }, 1000)
+                }, 1000);
+            }
+            //사진출처 : https://www.huffingtonpost.kr/entry/story-nature-nationalgeographic-trash_kr_5f97cba2c5b6e1e70763c285
+            // 참고 자료 : https://www.inflearn.com/course/%EC%8B%AC%EB%A6%AC%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91/lecture/68675?tab=curriculum&volume=1.00&speed=2
+        </script>
+    </body>
+</html>

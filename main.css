@@ -1,0 +1,26 @@
+#main{
+    background-color: whitesmoke;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  
+  p{
+    font-size: 25px;
+  }
+
+  body{
+    background-color: bisque;
+  }
+
+  #main2{
+    background-color: whitesmoke;
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+
+  }
+  *{font-family: 'Yeon Sung', cursive;}
